@@ -3,9 +3,8 @@ module.exports = {
     author: {
       name: 'Foo'
     },
-    title: `Agency Name`,
-    description: `Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.`,
+    title: `OSCAL Club`,
+    description: `This is the official website of the OSCAL Club community.`,
     navigation: [
       {
         items: [{ text: 'Home', link: '/' }],
