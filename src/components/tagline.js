@@ -9,21 +9,18 @@ const Tagline = () => (
     <div className="grid-row grid-gap">
       <div className="tablet:grid-col-4">
         <h2 className="font-heading-xl margin-top-0 tablet:margin-bottom-0">
-          A tagline highlights your approach
+          How do you contribute?
         </h2>
       </div>
       <div className="tablet:grid-col-8 usa-prose">
         <p>
-          The tagline should inspire confidence and interest, focusing on the
-          value that your overall approach offers to your audience. Use a
-          heading typeface and keep your tagline to just a few words, and don’t
-          confuse or mystify.
+          OSCAL is a standard for saving data about an organization's security, risk management, and compliance programs in a machine-readable way.
         </p>
         <p>
-          Use the right side of the grid to explain the tagline a bit more. What
-          are your goals? How do you do your work? Write in the present tense,
-          and stay brief here. People who are interested can find details on
-          internal pages.
+          For OSCAL to succeed, information technology executives, security professionals, security baseline authors, security assessors, and software developers must find real-world use cases, discuss what works, and discuss what needs improvement.
+        </p>
+        <p>
+        If you have expertise or passion in these disciplines, this community needs you to <b>discuss benefits, debate challenges, and prototype tools in the process</b>.
         </p>
       </div>
     </div>

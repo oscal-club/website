@@ -9,15 +9,13 @@ const Hero = () => (
     <div className="grid-container">
       <div className="usa-hero__callout">
         <h2 className="usa-hero__heading">
-          <span className="usa-hero__heading--alt">Hero callout:</span>Bring
-          attention to a project priority
+          <span className="usa-hero__heading--alt">Define compliance objectives, realize security outcomes.</span>          
         </h2>
         <p>
-          Support the callout with some short explanatory text. You don’t need
-          more than a couple of sentences.
+          OSCAL Club is a community to discuss, test, and implement solutions at the intersection of compliance and security.
         </p>
-        <a className="usa-button" href="/">
-          Call to action
+        <a className="usa-button" href="https://github.com/oscal-club/community/discussions">
+          Discuss in the forum
         </a>
       </div>
     </div>

@@ -56,7 +56,6 @@ const Nav = ({ navigation, secondaryLinks }) => (
             </li>
           ))}
         </ul>
-        <SearchForm />
       </div>
     </div>
   </nav>
