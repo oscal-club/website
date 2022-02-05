@@ -64,9 +64,12 @@ const Banner = () => (
               <p>
                 <strong>The site is secure.</strong>
                 <br />
-                The <strong>https://</strong> ensures that you are connecting to
-                the official website and that any information you provide is
-                encrypted and transmitted securely.
+                We deploy our website with <strong>https://</strong> to provide
+                encryption in transit, and force redirects when clients attempt 
+                unencrypted access with <strong>http://</strong>.
+                Thanks to <a href="https://certificate.transparency.dev/"> Certificate 
+                Transparency</a>, you can <a href="https://search.censys.io/?q=oscal.club">
+                review our current and old certs here</a>.
               </p>
             </div>
           </div>

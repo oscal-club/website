@@ -6,9 +6,9 @@
  */
 
  import React from 'react';
- import { Helmet } from 'react-helmet';
+ import Helmet from  'react-helmet';
  import PropTypes from 'prop-types';
- import { graphql, useStaticQuery, withPrefix } from 'gatsby';
+ import { graphql, useStaticQuery, withAssetPrefix } from 'gatsby';
  
  import Banner from './banner';
  import Footer from './footer';
@@ -54,7 +54,7 @@
        <Footer />
        <Helmet>
          <script
-          src={withPrefix("/assets/js/uswds.js")}
+          src={withAssetPrefix("/assets/js/uswds.js")}
          />
        </Helmet>
      </>

@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import close from '../../static/assets/img/usa-icons/close.svg';
-import SearchForm from './search-form';
 
 const Nav = ({ navigation, secondaryLinks }) => (
   <nav role="navigation" className="usa-nav">
