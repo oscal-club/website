@@ -15,7 +15,6 @@
  import Header from './header';
  import Nav from './nav';
 
- import "../../static/assets/css/styles.css"
  
  const Layout = ({ children }) => {
    const data = useStaticQuery(graphql`
@@ -55,7 +54,7 @@
        <Footer />
        <Helmet>
          <script
-          src={withPrefix("/assets/js/uswds.min.js")}
+          src={withPrefix("/assets/js/uswds.js")}
          />
        </Helmet>
      </>

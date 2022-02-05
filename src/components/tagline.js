@@ -20,7 +20,7 @@ const Tagline = () => (
           For OSCAL to succeed, information technology executives, security professionals, security baseline authors, security assessors, and software developers must find real-world use cases, discuss what works, and discuss what needs improvement.
         </p>
         <p>
-        If you have expertise or passion in these disciplines, this community needs you to <b>discuss benefits, debate challenges, and prototype tools in the process</b>.
+        If you have expertise or passion in these disciplines, this community needs you to <b>discuss benefits, debate challenges, and prototype tools in the process</b>.  
         </p>
       </div>
     </div>

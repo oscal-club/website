@@ -1,6 +1,6 @@
 import React from 'react';
-import flag from '../../static/assets/img/us_flag_small.png';
-import shield from '../../static/assets/img/usa-icons/shield.svg';
+import logo from '../../static/assets/img/logo-color.png';
+import logoSvg from '../../static/assets/img/logo-color.svg';
 import https from '../../static/assets/img/icon-https.svg';
 
 const Banner = () => (
@@ -11,8 +11,8 @@ const Banner = () => (
           <div className="grid-col-auto">
             <img
               className="usa-banner__header-flag"
-              src={shield}
-              alt="Sheild logo for oscal.club"
+              src={logo}
+              alt="Logo for oscal.club"
             />
           </div>
           <div className="grid-col-fill tablet:grid-col-auto">
@@ -41,8 +41,8 @@ const Banner = () => (
           <div className="usa-banner__guidance-gov tablet:grid-col-6">
             <img
               className="usa-banner__icon usa-media-block__img"
-              src={shield}
-              alt="Shield logo for oscal.club"
+              src={logoSvg}
+              alt="Logo for oscal.club"
             />
             <div className="usa-media-block__body">
               <p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../static/assets/img/logo-img.png';
+import logo from '../../static/assets/img/logo-color.svg';
 
 const Footer = () => (
   <footer className="usa-footer site-footer" role="contentinfo">
@@ -8,7 +8,7 @@ const Footer = () => (
         <div className="grid-row padding-3">
           <div className="tablet:grid-col">
             <div className="logo-links">
-              <a className="footer-logo media_link" href="https://18f.gsa.gov">
+              <a className="footer-logo media_link" href="https://oscal.club">
                 <img src={logo} width="50" alt="Agency logo" />
               </a>
             </div>
