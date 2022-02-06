@@ -10,22 +10,12 @@ module.exports = {
         items: [{ text: 'Home', link: '/' }],
       },
       {
-        items: [{ text: 'Blog', link: '/blog' }],
-      },
-      {
-        items: [{ text: 'Document', link: '/document' }],
-      },
-      {
-        items: [
-          { text: 'Document with sidenav', link: '/document-with-sidenav' },
-        ],
+        items: [{ text: 'Articles', link: '/blog' }],
       },
       {
         title: 'Document submenu',
         items: [
-          { text: 'Navigation link', link: '/' },
-          { text: 'Navigation link', link: '/' },
-          { text: 'Navigation link', link: '/' },
+          { }
         ],
       },
     ],
