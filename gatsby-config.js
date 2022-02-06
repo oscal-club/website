@@ -11,7 +11,7 @@ module.exports = {
         items: [{ text: 'Home', link: '/' }],
       },
       {
-        items: [{ text: 'Articles', link: '/articles' }],
+        items: [{ text: 'Blog', link: '/blog' }],
       },
       {
         title: 'Document submenu',
