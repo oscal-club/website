@@ -10,7 +10,7 @@ module.exports = {
         items: [{ text: 'Home', link: '/' }],
       },
       {
-        items: [{ text: 'Articles', link: '/blog' }],
+        items: [{ text: 'Articles', link: '/articles' }],
       },
       {
         title: 'Document submenu',
@@ -31,8 +31,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: `blog-posts`,
+        path: `${__dirname}/content/blog-posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `documentation-pages`,
+        path: `${__dirname}/content/documentation-pages`,
       },
     },
     {
@@ -114,7 +121,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "OSCAL Club Website Updates via RSS",
           },
         ],
       },
@@ -134,8 +141,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
+  ]
 }

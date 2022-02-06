@@ -1,107 +1,57 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+/*
+  This is used in blog posts. The index page can be found at src/pages/blog.js
+*/
 
+const BlogPost = ({ data }) => {
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+    <Layout>
+      <SEO title={frontmatter.title} />
+      <div className="usa-layout-docs usa-section">
+        <div className="grid-container">
+          <div className="grid-row grid-gap">
+            <div className="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+              <main id="main-content">
+                <h1 className="title">{frontmatter.title}</h1>
+                <div className="text-base margin-bottom-2">
+                  <div className="margin-top-neg-105">
+                    By <span className="text-bold">{frontmatter.author}</span> ·{' '}
+                    {frontmatter.date}
+                  </div>
+                  <span dangerouslySetInnerHTML={{ __html: html }} />
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
-  )
-}
-
-export default BlogPostTemplate
+  );
+};
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
-    site {
-      siteMetadata {
-        title
+  query($name: String!) {
+    markdownRemark(
+      fields: {
+        sourceName: { eq: "blog-posts" }
+        name: { eq: $name }
       }
-    }
-    markdownRemark(id: { eq: $id }) {
-      id
-      excerpt(pruneLength: 160)
+    ) {
       html
       frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-      }
-    }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
+        author
+        date
         title
       }
     }
   }
-`
+`;
+
+export default BlogPost;
