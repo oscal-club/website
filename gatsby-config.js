@@ -28,6 +28,7 @@ module.exports = {
   pathPrefix: process.env.BASEURL || '/',
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-slug`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
