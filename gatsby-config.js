@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://agitated-darwin-7a700a.netlify.app",
     author: {
-      name: 'Foo'
+      name: 'Al S'
     },
     title: `OSCAL Club`,
     description: `This is the official website of the OSCAL Club community.`,
