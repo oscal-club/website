@@ -7,6 +7,8 @@ author: Al S (Clubhouse Manager)
 
 Hello to and from the OSCAL Club Community. The community is small and determined, but even for the smallest of communities an easily editable website is key. So here we are! In order to allow members passionate about compliance and security, developer or not, to contribute to the site directly, I introduce the brand new site!
 
+# What Changed?
+
 The new website not only has some minor stylistic improvements, but big functionality enhancements.
 
 - The use of [the US Web Design System](https://designsystem.digital.gov/), for a crisp look but also one that is accessible for as many users as possible.
