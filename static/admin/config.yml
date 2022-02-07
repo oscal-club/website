@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: oscal-club/oscal-website-v2
-  auth_scope: repo
   open_authoring: true
 
 media_folder: static/img
