@@ -23,7 +23,7 @@ module.exports = {
     secondaryLinks: [
       { text: 'Our forum', link: 'https://github.com/oscal-club/community' },
       { text: 'Our projects', link: 'https://github.com/oscal-club' },
-      { text: 'Help fix this site', link: 'https://oscal.club/admin'}
+      { text: 'Help fix this site', link: '/admin'}
     ]
   },
   pathPrefix: process.env.BASEURL || '/',
