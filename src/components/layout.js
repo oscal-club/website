@@ -5,15 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
- import React from 'react';
- import Helmet from  'react-helmet';
- import PropTypes from 'prop-types';
- import { graphql, useStaticQuery, withAssetPrefix } from 'gatsby';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql, useStaticQuery } from 'gatsby';
  
- import Banner from './banner';
- import Footer from './footer';
- import Header from './header';
- import Nav from './nav';
+import Banner from './banner';
+import Footer from './footer';
+import Header from './header';
+import Nav from './nav';
 
  
  const Layout = ({ children }) => {
@@ -52,11 +51,6 @@
        </Header>
          {children}
        <Footer />
-       <Helmet>
-         <script
-          src={withAssetPrefix("/assets/js/uswds.js")}
-         />
-       </Helmet>
      </>
    );
  };

@@ -49,7 +49,7 @@ const Banner = () => (
                 <strong>The oscal.club domain means it’s official.</strong>
                 <br />
                 All OSCAL Club projects and materials are hosted on this domain
-                or sub-domains. Source code is on GitHub and technical artifacts
+                or sub-domains. Source code and technical artifacts
                 are on <a href="https://gitub.com/oscal-club">github.com/oscal-club</a>. That's it.
               </p>
             </div>

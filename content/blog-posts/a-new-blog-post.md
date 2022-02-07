@@ -1,7 +1,7 @@
 ---
-title: A New Blog Post
-date: 'February 19, 2020'
-author: Dave
+title: Welcome to Rebuilt Site
+date: 'February 6, 2022'
+author: Al S
 ---
 # A Special Delivery
 
