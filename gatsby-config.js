@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://agitated-darwin-7a700a.netlify.app",
+    siteUrl: "https://oscal.club",
     author: {
       name: 'Al S'
     },
@@ -21,14 +21,16 @@ module.exports = {
       },
     ],
     secondaryLinks: [
-      { text: 'Our Forum', link: 'https://github.com/oscal-club/community' },
-      { text: 'Our Projects', link: 'https://github.com/oscal-club' },
+      { text: 'Our forum', link: 'https://github.com/oscal-club/community' },
+      { text: 'Our projects', link: 'https://github.com/oscal-club' },
+      { text: 'Help fix this site', link: 'https://oscal.club/admin'}
     ]
   },
   pathPrefix: process.env.BASEURL || '/',
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-slug`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

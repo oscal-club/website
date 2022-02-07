@@ -18,9 +18,9 @@ const Blog = ({ data, pageContext }) => {
         className="bg-primary-darker usa-content font-serif-lg padding-y-6"
       >
         <div className="grid-container">
-          <h1 className="text-normal text-white margin-0">Blog</h1>
+          <h1 className="text-normal text-white margin-0">OSCAL <tt>&lt;remarks/&gt;</tt></h1>
           <span className="text-base-lighter display-block padding-top-1 text-light">
-            This is a description of the page.
+            Blog posts by OSCAL club members, for every <tt>&lt;party/&gt;</tt> and <tt>&lt;role/&gt;</tt>.
           </span>
         </div>
       </div>
@@ -110,36 +110,6 @@ const Blog = ({ data, pageContext }) => {
                     </Link>
                   </li>
                 ))}
-              </ul>
-            </div>
-            <div className="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
-              <h4>Another list of links</h4>
-              <ul className=" usa-list usa-list--unstyled padding-top-2">
-                <li className="padding-bottom-1">
-                  <Link className="usa-link" to="/blog">
-                    Most popular
-                  </Link>
-                </li>
-                <li className="padding-bottom-1">
-                  <Link className="usa-link" to="/blog">
-                    Another popular post
-                  </Link>
-                </li>
-                <li className="padding-bottom-1">
-                  <Link className="usa-link" to="/blog">
-                    This is popular
-                  </Link>
-                </li>
-                <li className="padding-bottom-1">
-                  <Link className="usa-link" to="/blog">
-                    A very long blog header that is popular
-                  </Link>
-                </li>
-                <li className="padding-bottom-1">
-                  <Link className="usa-link" to="/blog">
-                    A popular post on a blog
-                  </Link>
-                </li>
               </ul>
             </div>
             <div className="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
