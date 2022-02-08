@@ -17,7 +17,7 @@ The new website not only has some minor stylistic improvements, but big function
 
 - Most importantly, the migration to [Netlify](https://netlify.com) and [NetlifyCMS](https://netlifycms.org/) as a backend. This migration allows preview versions of the website before a pull request is reviewed, all while requiring passionate community adopters to contribute without a full developer environment on their computer.
 
-So, get started today! You can simly click the [Help fix this site link](/admin) in the upper right-hand corner.
+So, get started today! You can simply click the [Help fix this site link](/admin) in the upper right-hand corner.
 
 Oh, and expect more blog post series on the intersection of OSCAL and other topics soon. The new worflows will benefit all of us.
 
