@@ -8,6 +8,7 @@
     "url": "https://github.com/oscal-club/website"
   },
   "dependencies": {
+    "@netlify/plugin-gatsby": "^2.1.0",
     "gatsby": "^4.6.1",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-plugin-feed": "^4.6.0",
