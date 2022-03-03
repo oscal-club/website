@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path');
 const { paginate } = require('gatsby-awesome-pagination');
 
@@ -25,10 +26,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     value: fileNode.sourceInstanceName,
   });
   
+  const value = createFilePath({ node, getNode });
+
   createNodeField({
     node,
     name: 'name',
-    value: fileNode.name,
+    value,
   });
 };
 
@@ -56,7 +59,7 @@ async function createBlogPages(createPage, graphql) {
   // Create individual pages
   posts.forEach(({ node }) => {
     createPage({
-      path: 'blog/' + node.fields.name,
+      path: 'blog' + node.fields.name,
       component: postTemplate,
       context: {
         name: node.fields.name
