@@ -50,7 +50,7 @@ const Banner = () => (
                 <br />
                 All OSCAL Club projects and materials are hosted on this domain
                 or sub-domains. Source code and technical artifacts
-                are on <a href="https://gitub.com/oscal-club">github.com/oscal-club</a>. That's it.
+                are on <a href="https://github.com/oscal-club">github.com/oscal-club</a>. That's it.
               </p>
             </div>
           </div>
@@ -65,9 +65,9 @@ const Banner = () => (
                 <strong>The site is secure.</strong>
                 <br />
                 We deploy our website with <strong>https://</strong> to provide
-                encryption in transit, and force redirects when clients attempt 
+                encryption in transit, and force redirects when clients attempt
                 unencrypted access with <strong>http://</strong>.
-                Thanks to <a href="https://certificate.transparency.dev/"> Certificate 
+                Thanks to <a href="https://certificate.transparency.dev/"> Certificate
                 Transparency</a>, you can <a href="https://search.censys.io/?q=oscal.club">
                 review our current and old certs here</a>.
               </p>
