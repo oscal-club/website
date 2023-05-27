@@ -69,9 +69,10 @@ const Banner = () => (
                 unencrypted access with <strong>http://</strong>.
                 Thanks to <a href="https://certificate.transparency.dev/"> Certificate
                 Transparency</a>, you can <a href="https://crt.sh/?q=oscal.club">
-                review our current and old certs here</a>. We uses the Let's Encrypt R3
+                review our current and old certs here</a>. We uses Let's Encrypt R3
                 certificate authority, and they update certificates periodically after
-                checking we public DNS records to prove we still own this infrastructure.
+                checking we maintain public DNS records to prove we still own this
+                infrastructure.
               </p>
             </div>
           </div>
