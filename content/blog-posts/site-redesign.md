@@ -1,6 +1,6 @@
 ---
 title: Site Redesign
-date: February 7, 2022
+date: 2022-02-07T00:00:00.000Z
 author: Al S (Clubhouse Manager)
 ---
 # Breaking News: A New Year, a New Look

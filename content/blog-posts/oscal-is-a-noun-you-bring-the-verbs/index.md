@@ -1,7 +1,7 @@
 ---
 title: OSCAL Is a Noun, You Bring the Verbs
 date: 2022-03-03T01:06:01.571Z
-author: Al S
+author: Al S (Clubhouse Manager)
 ---
 As I watch the OSCAL community expand, I am excited to see an explosive growth in the quantity and quality of OSCAL-based projects. There are many kinds of people involved in OSCAL projects, and I have the wonderful privilege of talking to these many kinds of people, all in different steps of their OSCAL journey. One theme I hear increasingly often from those who have built expertise in OSCAL and get questions from the uninitiated is: **OSCAL is a noun, not a verb, why do people not get that!?**
 
