@@ -196,7 +196,7 @@ export const pageQuery = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "blog-posts" } } }
-      sort: { fields: [frontmatter___date, frontmatter___title], order: ASC }
+      sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
       skip: $skip
       limit: $limit
     ) {

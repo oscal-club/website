@@ -1,7 +1,7 @@
 ---
 title: Awesome OSCAL, Now More Awesome with Content!
 date: 2022-09-19T00:46:27.896Z
-author: Al S
+author: Al S (Clubhouse Manager)
 ---
 # What's Happening in the OSCAL World?
 
